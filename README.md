@@ -4,13 +4,13 @@ Utility function to convert `json-stream` objects to normal Python dicts/lists.
 
 Parallel PR: https://github.com/daggaz/json-stream/pull/17
 
-### Installation
+## Installation
 
 ```bash
 pip install json-stream-to-standard-types
 ```
 
-### Usage
+## Usage
 
 To convert a json-stream `dict`-like or `list`-like object and all its
 descendants to a standard `list` and `dict`, simply appl apply library's
@@ -27,3 +27,7 @@ print(results)  # prints <TransientStreamingJSONList: TRANSIENT, STREAMING>
 converted = to_standard_types(results)
 print(converted)  # prints [1, 2, 3]
 ```
+
+## License
+
+Do whatever you want with it license or whatever it was called
