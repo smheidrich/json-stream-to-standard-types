@@ -13,7 +13,7 @@ pip install json-stream-to-standard-types
 ## Usage
 
 To convert a json-stream `dict`-like or `list`-like object and all its
-descendants to a standard `list` and `dict`, simply appl apply library's
+descendants to a standard `list` and `dict`, simply apply the library's
 `to_standard_types` function:
 
 ```python
