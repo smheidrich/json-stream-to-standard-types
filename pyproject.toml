@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "json-stream-to-standard-types"
-version = "0.1.2"
+version = "0.1.3"
 description = "Convert json-stream objects to standard Python dicts and lists"
 authors = ["smheidrich <smheidrich@weltenfunktion.de>"]
 packages = [
