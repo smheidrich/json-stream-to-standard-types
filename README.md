@@ -1,3 +1,7 @@
+⚠ **NOTE:** Starting at json-stream 2.2.0,[`to_standard_types` is part of
+json-stream itself](https://github.com/daggaz/json-stream/pull/33), so there
+is no longer a need for this packgage.
+
 # json-stream-to-standard-types
 
 Utility function to convert `json-stream` objects to normal Python dicts/lists.
