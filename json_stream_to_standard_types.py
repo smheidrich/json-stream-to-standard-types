@@ -7,31 +7,6 @@ class Context:
     LIST = 1
     DICT = 2
 
-def to_standard_types1(x):
-    if isinstance(x, StreamingJSONList):
-        return [ to_standard_types(y) for y in x ]
-    elif isinstance(x, StreamingJSONObject):
-        return { k: to_standard_types(v) for k, v in x.items() }
-    else:
-        return x
-
-class UnlimitedRecursor(ABC):
-    def __call__(self):
-        pass
-
-    @abstractmethod
-    def run(self, *args, **kwargs):
-        pass
-
-
-class ToStandardTypes(UnlimitedRecursor):
-    def run(self, x):
-        if isinstance(x, StreamingJSONList):
-            return [ self(y) for y in x ]
-        elif isinstance(x, StreamingJSONObject):
-            return { k: self(v) for k, v in x.items() }
-        else:
-            return x
 
 def to_standard_types(x):
     in_stack, out_stack = deque(), deque()
